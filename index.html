@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa62a6d169.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logan logo.png" width="800" height="200" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span>Farmyard keeper assistant / Professional Vollie</span></p>
+                <h1>Hey, I'm Logan Eager<br> From Christchurch NZ</h1>
+            </div>
+        </div>
+    </div>
+<!--------------about------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/holding blanches wing.png" width="500px">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am usually described as a hardworking, self motivated individual. My current life goals are to become a qualified zookeeper aswell as a qualified game developer.
+                    I train mixed martial arts as a sport and I currently have around a year of experience. Aside from MMA, my main joys in life usually come from being outdoors, doing things that are hard, helping other people and problem solving.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick= "opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick= "opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Animal Handling/Animal Care</span><br>Skills in handling and caring for animals, specalising in farmyard animals</li>
+                            <li><span>Range of Computer Skills</span><br>Examples include Windows troubleshooting, basic programming, spreadsheets, building computers etc</li>
+                            <li><span>MMA/Fitness</span><br>I have a year of training inside of MMA and experience in olympic style weightlifting aswell as general weights.<br>Notably I have assisted in teaching classes of youth in weight lifting, wrestling and jui jitsu</li>
+                        </ul>
+                    </div><div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Orana Wildlife Park Keeper Assistant</span><br>Dec 2022 - Present | Jobs include handling and caring for animals, specalising in farmyard animals</li>
+                            <li><span>Orana Wildlife Park Volunteer</span><br>Jun 2021 - Nov 2023 | I volunteered in the farmyard mainly cleaning after the animals</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Aotawhiti/Unlimited Discovery school</span><br>NCEA level 3 achieved with biology, statistics and philosophy</li>
+                            <li><span>National Trade Academy</span><br>I completed a STAR agricultural course here which mainly consisted of herding and drenching sheep aswell as other agricultural skills</li>
+                        </ul>
+                    </div>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<!------------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title" style="font-size: 56px; padding-bottom: 1%;">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/jumping man.png">
+                <div class="layer">
+                    <h3>Video Editing</h3>
+                    <p>I have edited a decent amount of videos using Adobe Premiere Pro</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/me with muffin-Photoroom.png">
+                <div class="layer">
+                    <h3>Zookeeping</h3>
+                </div>
+            </div>
+           
+            
+            <div class="work">
+                <img src="Images/me coding.png">
+                <div class="layer">
+                    <h3>Programming</h3>
+                    <p>Other big projects aside from this website include; my OOP text based adventure and my discord bot</p>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+    
+
+</body>
+</html>
