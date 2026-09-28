@@ -26,6 +26,11 @@
   margin: 10px 0;
 }
 
+video {
+  width: 20rem;
+  height: auto;
+}
+
 /* CONTACT SECTION STYLES */
 .contact {
   margin-top: 10rem;

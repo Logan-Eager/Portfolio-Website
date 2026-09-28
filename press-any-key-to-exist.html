@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Style Sheet CSS Link-->
+    <link rel="stylesheet" href="./Styles/press-any-key-to-exist.css" />
+
+    <!-- Site Icon -->
+    <link rel="icon" href="controller-page-icon.ico" />
+
+    <!-- Title & Description -->
+    <title>PRESS ANY KEY TO EXIsT</title>
+    <meta name="description"
+      content="Logan Eager Game Development Project: VR Escape room with an annoyingly managerial twist" />
+  </head>
+
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <h1>LOGAN EAGER - <span class="highlight">Portfolio</span></h1>
+      <ul>
+        <li><a href="index.html">Home 🔗</a></li>
+      </ul>
+    </nav>
+
+    <!-- Project Hero -->
+    <header class="project-hero">
+      <video src="./Assets/GamePhotos/PressAnyKeyToExist/Videos/pakte-keypadding.mp4" autoplay muted loop playsinline width="800" height="450" poster="./Assets/GamePhotos/PressAnyKeyToExist/press-any-key-to-exist.webp">
+      </video>
+      <h1>PRESS ANY KEY TO EXIsT</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Project Overview</h2>
+        <p class="content">This project was my focus for a VR development course I did in university. I was given a
+          generously broad prompt of making an 'escape room game' in VR. So naturally I went to my sketchbook to brain storm
+          and get an idea of what I was going to do.</p>
+        <img src="./Assets/GamePhotos/PressAnyKeyToExist/press-any-key-to-exist.webp" alt="Sketch of PAKTE" loading="lazy"
+          width="250" height="250">
+      </section>
+
+      <section>
+        <h2>Brainstorming</h2>
+        <p class="content">I wanted to add an innovative twist onto the traditional escape room experience, for this I had the
+          idea of having to manage a seperate game mechanic as you play, (similar to Five Nights at Freddys 2 and its music box
+          mechanic). I also had the idea of a currency system; earning money as you do jobs, which would then allow you to order
+          food.</p>
+        <p class="content">For the puzzles, I set out to make them fairly simple and high volume, due to the stress I was aiming
+          to invoke in the player, since puzzles tend to scale in difficulty as the player becomes more stressed (Yerkes-Dodson law!). A few I'll
+          mention are the keypad puzzle where you need to move props around and find a code, which then can only be inputted with
+          a pen in your pencil holder; and the usb puzzle where you find usbs around the room and put them into their respective slots.</p>
+        <p class="content">There was something missing though, why does the player want to escape? What is the motivation? I then had the idea of an
+          absurdly annoying manager on voice chat with you, which I think adds a great layer of comedy to the experience -
+          Putting this all together, I had a vision for a high-stress, absurd escape room.</p>
+        <img src="./Assets/GamePhotos/PressAnyKeyToExist/pakte-sketches-1.webp" alt="Sketch of PAKTE" loading="lazy" width="250"
+          height="250">
+      </section>
+
+      <section>
+        <h2>Development</h2>
+        <p class="content">As I started building, I quickly realised that the allotted timeframe was not enough for the current scope
+          of the game, so I unfortunately had to pick up my scope hammer and take out the currency system.
+          I was however, able to build some really cool features!</p>
+        <p class="content">I learnt alot about the unity XR package and API as a whole, it was also a great intro to event
+          based input handling.
+          I made use of the 'socket' functionality for many of the puzzles I created, a beautifully simple yet effective tool for
+          VR games. There was also a great debug tool which was simply called 'device simulator', which allowed me to test my game
+          without whacking a headset on and off my head.
+        </p>
+        <p class="content">
+          At this stage in my game-dev journey, I was at a stage of using free assets from artists
+          on turbo squid, although I had a specific vision in mind for the keyboard. I wanted something that wouldnt have tiny
+          keys, due to lack of fine motor control in XR devices; and I also wanted something easily
+          understandable, something that could be used under stress, (one of my main game-design goals). So I made it myself!
+          I ended up learning alot about 3D modelling and texturing. Then, as a bonus, it was exactly what I wanted!
+        </p>
+        <img src="./Assets/GamePhotos/PressAnyKeyToExist/pakte-keyboard.webp" alt="Sketch of PAKTE" loading="lazy" width="250"
+          height="250">
+
+        <h2>Product and Reflections</h2>
+        <p class="content">The final product was a great prototype but lacked polish due to lack of playtesting. My main
+          learning from this experience was the importance of playtesting and playtesting early. Although I had alot of fun modelling and
+          programming this game, and I learnt alot. Onto the next!</p>
+        <img src="./Assets/GamePhotos/PressAnyKeyToExist/pakte-puzzles.webp" alt="Sketch of PAKTE" loading="lazy" width="250"
+          height="250">
+        </section>
+        </main>
+
+    <!-- Visual Scroll Arrow -->
+    <footer>
+      <img src="Assets/down-arrow.webp" alt="Scroll Down Arrow" width="40" height="40" />
+    </footer>
+    <script src="Scripts/scroll-visual-aid.js"></script>
+  </body>
+</html>

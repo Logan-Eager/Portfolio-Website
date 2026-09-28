@@ -1,5 +1,11 @@
 @import url("./Imports/main.css");
     
+
+video {
+    width: 20rem;
+    height: auto;
+}
+
 /* RESPONSIVE STYLES */
 @media (max-width: 1024px) {
     .project-grid {
